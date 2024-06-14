@@ -1,12 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarjeta de Presentación</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0f7fa;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 400px;
+        }
+        .card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h1 {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #333;
+        }
+        .card p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .card .description {
+            font-size: 14px;
+            margin: 10px 0 20px;
+        }
+        .card .contact-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0 10px;
+        }
+        .card .contact-info a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 14px;
+        }
+        .card .contact-info img {
+            width: 30px;
+            height: 30px;
+        }
+        .card .contact-info span {
+            font-size: 14px;
+            color: #333;
+        }
+     </style>
 </head>
 <body>
-    <h1>Bienvenidos Javier Jose Hernandez </h1>
-    <h2>programacion web</h2>
+    <div class="card">
+        <img src="https://avatars.githubusercontent.com/u/49690133?s=400&u=e6625df8a94e4acd41063e03f02657cc8ded4a20&v=4/190" alt="Foto de Perfil" class="profile-pic">
+        <h1>Javier Jose Hernandez Torregroza</h1>
+        <p class="description">
+            Profesional en ingeniería de software, apasionado por la tecnología, buscando aprender cada día más de lo que nos ofrece la tecnología para el crecimiento de las empresas y laborar en lo que me apasiona.
+        </p>
+        <div class="contact-info">
+            <a href="https://github.com/Javierjht21" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+                Javierjht21
+            </a>
+            <span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Twitter_Bird.svg" alt="Teléfono">
+               <span>+573118122360</span> 
+            </span>
+            <a href="https://linkedin.com/in/Javier-Torregroza" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+             Javier Torregroza
+        </div>
+    </div>
 </body>
 </html>
+
