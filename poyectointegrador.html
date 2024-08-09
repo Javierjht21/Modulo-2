@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Javier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+        }
+        header {
+            background-color: #00acc1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #00796b;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #004d40;
+        }
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .button {
+            background-color: #00e676;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .footer {
+            background-color: #004d40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+            background-color: #c8e6c9;
+        }
+        .contact-info img {
+            border-radius: 50%;
+            width: 100px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .product {
+            text-align: center;
+            margin: 10px;
+        }
+        .product img {
+            width: 150px;
+            height: auto;
+            background-color: transparent;
+        }
+        .product p {
+            margin: 10px 0;
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: #004d40;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card img {
+            border-radius: 10px;
+            width: 150px;
+        }
+        .card div {
+            margin-left: 20px;
+        }
+        .card a {
+            color: white;
+            text-decoration: none;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .features .text {
+            width: 45%;
+            text-align: left;
+        }
+        .features iframe {
+            width: 45%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Technology Javier
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#tienda">Tienda</a>
+    <a href="#acerca">Acerca de</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="section" id="inicio">
+    <h1>¡Lo último!</h1>
+    <p>Lo último en board ha llegado para ti</p>
+    <img src="https://asrock.com/mb/photo/B450M%20Steel%20Legend(M1).png" alt="Board Asrock B450M Steel Legend">
+    <br>
+    <a href="#tienda" class="button">Comprar ahora</a>
+    <a href="#tienda" class="button">Ver más</a>
+</section>
+
+<style>
+    .product {
+        text-align: center;
+        margin: 10px;
+        flex: 1 1 200px; /* Ajusta el ancho mínimo */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product img {
+        width: 150px;
+        height: auto;
+        background-color: transparent;
+        margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
+    }
+    .product p {
+        margin: 10px 0;
+        font-weight: bold; /* Resalta el nombre del producto */
+    }
+    .product .button {
+        margin-top: auto; /* Empuja el botón hacia la parte inferior */
+    }
+</style>
+
+
+<section class="section" id="tienda">
+    <h2>Tienda</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://asrock.com/mb/photo/B450M%20Steel%20Legend(M1).png" alt="Board Asrock B450M Steel Legend">
+            <p>Board Asrock B450M Steel Legend</p>
+            <a href="#comprar" class="button">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://pcmartcolombia.com/storage/2023/03/p_su650_512gb.png" alt="Disco SSD 512GB">
+            <p>Disco SSD 512GB</p>
+            <a href="#comprar" class="button">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://basevirtual.com.co/wp-content/uploads/2022/04/BASE-VIRTUAL-DISCO-XPG-M21-1TB-S70-BLADE.png" alt="SSD M.2 1TB">
+            <p>SSD M.2 1TB</p>
+            <a href="#comprar" class="button">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.Im40CSgAFNVDFi3ntdAibgHaHa?rs=1&pid=ImgDetMain" alt="Chasis Gaming RGB">
+            <p>Chasis Gaming RGB</p>
+            <a href="#comprar" class="button">Comprar ahora</a>
+        </div>
+    </div>
+</section>
+
+<section class="section features" id="caracteristicas">
+    <div class="text">
+        <h2>Características</h2>
+        <ul>
+            <li>Supports AMD AM4 Socket Ryzen™ 2000, 3000, 4000 G-Series, 5000 and 5000 G-Series Desktop Processors</li>
+            <li>Supports DDR4 3533+ (OC)</li>
+            <li>1 PCIe 3.0 x16, 1 PCIe 2.0 x16, 1 PCIe 2.0 x1</li>
+            <li>AMD Quad CrossFireX™</li>
+            <li>Graphics Output: DisplayPort, HDMI</li>
+            <li>7.1 CH HD Audio (Realtek ALC892/897 Audio Codec)</li>
+            <li>4 SATA3, 1 Ultra M.2 (PCIe Gen3 x4), 1 M.2 (SATA3)</li>
+            <li>2 USB 3.2 Gen2 (Rear Type-A+C)</li>
+            <li>6 USB 3.2 Gen1 (2 Front, 4 Rear)</li>
+            <li>Realtek Gigabit LAN</li>
+        </ul>
+    </div>
+    <iframe src="https://www.youtube.com/embed/UAbqr75MAqA" title="YouTube video" allowfullscreen></iframe>
+</section>
+
+<section class="section" id="comprar">
+    <h2>Compra</h2>
+    <form action="/submit_purchase" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+        <label for="metodo_pago">Método de Pago:</label><br>
+        <select id="metodo_pago" name="metodo_pago" required>
+            <option value="tarjeta">Tarjeta</option>
+            <option value="contra_entrega">Pago contra entrega</option>
+        </select><br><br>
+        <input type="submit" value="Confirmar Compra" class="button">
+    </form>
+</section>
+
+<section class="section">
+    <div class="card">
+        <img src="https://avatars.githubusercontent.com/u/49690133?s=400&u=e6625df8a94e4acd41063e03f02657cc8ded4a20&v=4/190" alt="Foto de Perfil" class="profile-pic">
+        <h1>Javier Jose Hernandez Torregroza</h1>
+        <p class="description">
+            Profesional en ingeniería de software, apasionado por la tecnología, buscando aprender cada día más de lo que nos ofrece la tecnología para el crecimiento de las empresas y laborar en lo que me apasiona.
+        </p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <a href="https://github.com/Javierjht21" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github
