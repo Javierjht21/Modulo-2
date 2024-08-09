@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de Presentación</title>
     <style>
-    
         body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #e0f7fa;
             margin: 0;
+            background-image: url('https://th.bing.com/th/id/OIP.Jt4_8Bop7rcovKdjoYK_pgHaEK?rs=1&pid=ImgDetMain');
+            background-size: cover;
+            background-position: center;
         }
         .card {
-            background-color: #fff;
+            background-color: #b3e5fc; /* Azul claro */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
             width: 400px;
+            color: #003366; /* Color del texto */
         }
         .card img {
             border-radius: 50%;
@@ -32,11 +34,11 @@
         .card h1 {
             margin: 10px 0;
             font-size: 22px;
-            color: #333;
+            color: #003366; /* Color del nombre */
         }
         .card p {
             margin: 10px 0;
-            color: #666;
+            color: #003366; /* Color de la descripción */
         }
         .card .description {
             font-size: 14px;
@@ -48,18 +50,21 @@
             align-items: center;
             margin: 20px 0 10px;
         }
-        .card .contact-info a {
-            text-decoration: none;
-            color: #007BFF;
-            font-size: 14px;
+        .card .contact-item {
+            text-align: center;
         }
-        .card .contact-info img {
+        .card .contact-item a, .card .contact-item span {
+            text-decoration: none;
+            color: #003366; /* Azul marino para los enlaces y el número */
+            font-size: 16px;
+            display: block;
+            margin-top: 5px;
+        }
+        .card .contact-item img {
             width: 30px;
             height: 30px;
-        }
-        .card .contact-info span {
-            font-size: 14px;
-            color: #333;
+            display: block;
+            margin: 0 auto;
         }
      </style>
 </head>
@@ -71,19 +76,25 @@
             Profesional en ingeniería de software, apasionado por la tecnología, buscando aprender cada día más de lo que nos ofrece la tecnología para el crecimiento de las empresas y laborar en lo que me apasiona.
         </p>
         <div class="contact-info">
-            <a href="https://github.com/Javierjht21" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-                Javierjht21
-            </a>
-            <span>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Twitter_Bird.svg" alt="Teléfono">
-               <span>7777777</span> 
-            </span>
-            <a href="https://linkedin.com/in/Javier-Torregroza" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
-             Javier Torregroza
+            <div class="contact-item">
+                <a href="https://github.com/Javierjht21" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+                    Javierjht21
+                </a>
+            </div>
+            <div class="contact-item">
+                <span>
+                    <img src="https://cdn-icons-png.freepik.com/512/4423/4423898.png" alt="Teléfono">
+                    +573118122360
+                </span>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/javier-torregroza-495996105/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                    Javier Torregroza
+                </a>
+            </div>
         </div>
     </div>
 </body>
 </html>
-
